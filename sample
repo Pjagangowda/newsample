@@ -1,0 +1,8 @@
+#!/bin/bash
+yum update -y
+yum install httpd -y 
+systemctl enable httpd
+systemctl start httpd
+mkdir -p  /var/www/html/football/
+echo "this is football" >/var/www/html/football/index.html
+
